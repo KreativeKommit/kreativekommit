@@ -1,0 +1,43 @@
+.infobar{
+    background-color: #2D2F30;
+    color: #fff;
+    font-size: .8rem;
+    padding: .4rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    font-weight: 350;
+    position: fixed;
+    width: 100%;
+    top:-1px;
+    z-index: 1;
+
+    &__container{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    &__phone{
+        cursor: pointer;
+
+        &:hover{
+            color: #b3d045;
+            transition: color .25s linear;
+        }
+    }
+    &__email{
+        color: #9b9b9b;
+        cursor: pointer;
+
+        &:hover{
+            color: #fff;
+            transition: color .25s linear;
+        }
+
+        &:before{
+            color: #b3d045;
+            content: '|';
+            margin: 4px;
+        }
+    }
+}

@@ -1,0 +1,89 @@
+.item{
+    width: 100%;
+    position: relative;
+    height: 20rem;
+    overflow: hidden;
+
+    &:hover{
+        .item__overlay{
+            display: block;
+        }
+        .item__image img{
+            transform: scale(1.050,1.050);
+        }
+        .item__details{
+            opacity: 1;
+            transition: all .4s linear;
+            &__wrapper{
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    }
+
+    &__image{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 0;
+
+        img{
+            width: 100%;
+            height: 100%;
+            transform-origin:center;
+            transition: all .4s ease-in-out;
+        }
+    }
+    &__overlay{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: rgba(0,0,0,.5);
+        display: none;
+
+    }
+    &__details{
+        position: absolute;
+        width: 90%;
+        height: 90%;
+        margin: 1rem 2rem;
+        border: 1px solid #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: #fff;
+        opacity: 0;
+        transition: opacity .3s ease-in-out;
+
+        &__wrapper{
+            transform: translateY(10px);
+            opacity: 0;
+            transition:all .3s linear;
+        }
+        
+    }
+    &__heading{
+            font-size: 2.5rem;
+            text-transform: uppercase;
+    }
+    &__title{
+        font-size: 1.2rem;
+        margin-bottom: .3rem;
+    }
+    &__button{
+        background-color: #393734;
+        color: #fff;
+        border:1px solid  #B3D146;
+        padding: .2rem;
+        font-size: 1rem;
+        text-transform: uppercase;
+
+        &:hover{
+            background-color: #B3D146;
+            color: #fff;
+            transition: all .4s linear;
+        }
+
+    }
+}
