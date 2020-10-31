@@ -1,0 +1,26 @@
+.technologies{
+    margin: 2rem auto;
+
+    &__heading{
+        text-align: center;
+        font-size: 2rem;
+        padding: .5rem;
+        border-bottom: 1px solid #d5d5d6;
+        color: #2d2f30;
+    }
+    &__list{
+        display: flex;
+        align-items: center;
+        margin: 2rem auto;
+        &__item{
+            width: 32%;
+            margin: 0 2rem;
+            display: flex;
+            align-items: center;
+
+            img{
+                width: 100%;
+            }
+        }
+    }
+}

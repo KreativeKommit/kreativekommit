@@ -1,0 +1,36 @@
+.row{
+    width: 40%;
+    margin-bottom: 1rem;
+    color: #fff;
+
+    &__text{
+        height: 291px;
+        margin:1rem 0;
+        width: calc(100% );
+        background-color: var(--main-color);
+        margin-top: 0;
+        position: relative;
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+        &__quote{
+            font-size: 2rem;
+        }
+        &__author{
+            justify-self: flex-end;
+            margin-left: auto;
+            margin-top: -5rem;
+        }
+    }
+    &__image{
+        width:calc(100% );
+        margin:  1rem 0;
+
+        img{
+            width: 100%;
+        }
+    }
+}

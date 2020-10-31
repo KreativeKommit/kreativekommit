@@ -1,0 +1,98 @@
+.connect{
+    height: 95vh;
+    background-image: url('../../../images/main page/connect.jpg');
+    background-size: cover;
+    
+    &__container{
+        display: flex;
+        justify-content: flex-end;
+        height: 100%;
+    }
+
+    &__content{
+        width: 100%;
+        max-width: 471px;
+        position: relative;
+
+
+        &__line{
+            height: 450px;
+            margin-top: 6rem;
+            width: 1px;
+            background-color: var(--main-color);
+            position: relative;
+
+            &__icon{
+                background-color: var(--main-color);
+                width: 4rem;
+                height: 4rem;
+                border-radius: 50%;
+                line-height: 4rem;
+                text-align: center;
+                font-size: 2rem;
+                color: #fff;
+                position: absolute;
+                top:0;
+                left: 0;
+                transform: translate(-50%,-100%);
+            }
+            &__arrow{
+                font-size: 2rem;
+                color: var(--main-color);
+                bottom: -3rem;
+                position: absolute;
+                transform: translateX(-50%);
+            }
+
+            &__circle{
+                position: absolute;
+                left: 10px;
+                padding: 0 4rem;
+                font-size: 1.5rem;
+                color: #E1E1E1;
+                font-weight: bold;
+
+                &:before{
+                    content: '';
+                    background-color: #E1E1E1;
+                    width: .7rem;
+                    height: .7rem;
+                    border-radius: 50%;
+                    display: block;
+                    position: absolute;
+                    left: -1rem;
+                    top: 0;
+                    transform: translateY(100%);
+                }
+
+                &Top{
+                    bottom: 20%;
+                }
+                &Bottom{
+                    bottom: 5%;
+                }
+                
+            }
+        }
+
+        &__content{
+            position:absolute ;
+            top: 2rem;
+            left: 4rem;
+
+            &__heading{
+                color: var(--main-color);
+                font-size:  3rem;
+            }
+            &__span{
+                margin: 1.5rem auto;
+                font-size: 1rem;
+                font-weight: bold;
+            }
+            &__text{
+                line-height: 170%;
+                font-weight: 300;
+            }
+        }
+    }
+}

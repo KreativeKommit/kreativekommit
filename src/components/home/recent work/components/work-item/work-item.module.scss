@@ -75,13 +75,13 @@
     &__button{
         background-color: #393734;
         color: #fff;
-        border:1px solid  #B3D146;
+        border:1px solid  var(--main-color);
         padding: .2rem;
         font-size: 1rem;
         text-transform: uppercase;
 
         &:hover{
-            background-color: #B3D146;
+            background-color: var(--main-color);
             color: #fff;
             transition: all .4s linear;
         }

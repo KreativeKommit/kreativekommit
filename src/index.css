@@ -11,6 +11,10 @@ body{
     width: 1170px;
     margin: auto;
 }
+
+:root{
+    --main-color:#00A2E3;
+}
 .list-unstyled{
     list-style-type: none;
 }

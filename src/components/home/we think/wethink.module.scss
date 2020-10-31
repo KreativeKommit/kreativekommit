@@ -3,7 +3,7 @@
     background-image: url('../../../images/main page/wethink.jpg');
     background-size: cover;
     background-position: bottom;
-    border-top: 4px solid #B3D146;
+    border-top: 4px solid var(--main-color);
     display: grid;
     grid-template-columns: 1fr 1fr;
 }

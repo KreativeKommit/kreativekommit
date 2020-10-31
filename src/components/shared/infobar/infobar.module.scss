@@ -21,7 +21,7 @@
         cursor: pointer;
 
         &:hover{
-            color: #b3d045;
+            color: var(--main-color);
             transition: color .25s linear;
         }
     }
@@ -35,7 +35,7 @@
         }
 
         &:before{
-            color: #b3d045;
+            color: var(--main-color);
             content: '|';
             margin: 4px;
         }

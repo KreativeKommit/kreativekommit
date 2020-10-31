@@ -6,16 +6,14 @@
     &:hover{
         .item {
             &__secondlayer{
-                
-                    opacity: 1;
-                
+                opacity: 1;
             }
         }
     }
 
     &__icon{
         color: #fff;
-        background-color: #B3D13B;
+        background-color: var(--main-color);
         border-radius: 50%;
         text-align: center;
         width: 3rem;
@@ -38,7 +36,7 @@
     }
     &__link{
         position: absolute;
-        color: #B3D13B;
+        color: var(--main-color);
         bottom: 2rem;
         left: 3rem ;
     }
@@ -86,7 +84,7 @@
                 text-align: left;
                 font-size: 2rem;
                 margin: 1rem auto;
-                color: #B1D237;
+                color: var(--main-color);
             }
 
 
@@ -101,7 +99,7 @@
                         color: #fff;
                         text-decoration: none;
                         &:hover{
-                            color: #B1D237;
+                            color: var(--main-color);
                         }
                     }
                    
@@ -112,13 +110,13 @@
             &__button{
                 background-color:rgba(18,20,21,.7) ;
                 color: #fff;
-                border: 2px solid #B1D237;
+                border: 2px solid var(--main-color);
                 padding: .5rem 1.5rem;
                 transition: background-color .3s ease-in-out;
                 cursor: pointer;
 
                 &:hover{
-                    background-color: #B1D237;
+                    background-color: var(--main-color);
 
                 }
                 
