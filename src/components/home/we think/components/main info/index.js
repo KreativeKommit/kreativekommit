@@ -1,7 +1,31 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import Styles from './maininfo.module.scss';
 
 const MainInfo = props => {
+    useEffect(() => {
+
+        const container = document.querySelector('.'+Styles.info__container);
+
+        const handleScrolling = (e)=>{
+            const containerRect = container.getBoundingClientRect();
+
+            if(
+                containerRect.top>= 0 &&
+                containerRect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+            ){
+                container.style.transform = 'translateX(0)';
+                container.style.opacity = '1';
+            }else{
+                container.style.transform = 'translateX(-60px)';
+                container.style.opacity = '0';
+            }
+        }
+        window.addEventListener('scroll',handleScrolling);
+    
+        return () => {
+            window.removeEventListener('scroll',handleScrolling)
+        }
+    }, [])
     return (
         <div className = {`${Styles.info}`}>
             <div className = {`${Styles.info__container}`}>

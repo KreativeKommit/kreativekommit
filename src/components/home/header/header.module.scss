@@ -3,6 +3,7 @@
     background-size: cover;
     height: 100vh;
     position: relative;
+    overflow: hidden;
 
     .nav{
         position: fixed;
@@ -20,12 +21,14 @@
 
         
     }
-    p{
+    &__info{
         position: absolute;
         color: #fff;
         font-size: 5rem;
         top:50%;
         text-align: right;
         width: 90%;
+        transform:translateX(80%);
+        transition: transform .4s ease-out;
     }
 }

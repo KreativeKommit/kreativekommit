@@ -5,7 +5,7 @@ import NavBar from '../../shared/navbar';
 const Header = props => {
     useEffect(() => {
         const nav = document.querySelector(`.${Styles.nav}`);
-        console.log(nav)
+        
         const animateNav = (e)=>{
             const navRect = nav.getBoundingClientRect();  
             const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
@@ -29,11 +29,35 @@ const Header = props => {
         }
         
     }, [])
+    // animate haeder info after appearing in the screen
+
+    useEffect(()=>{
+        const info = document.querySelector('.'+Styles.header__info);
+       setTimeout(()=> info.style.transform = 'translateX(0)',1000) 
+            const animateInfo = (e) => {
+                const infoRect = info.getBoundingClientRect();
+
+                if(
+                    infoRect.top>= 0 &&
+                    infoRect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+                ){
+                    info.style.transform = 'translateX(0)';
+                }
+                else{
+                    info.style.transform = 'translateX(80%)';
+                }
+            }
+            window.addEventListener('scroll',animateInfo);
+
+        return ()=>{
+            window.removeEventListener('scroll',animateInfo)
+        }
+    },[])
     return (
         <header className = {`${Styles.header}`}>
             
             <NavBar class = {Styles.nav}/>
-            <p>
+            <p className = {Styles.header__info}>
                 BIG IDEAS,<br />
                 CREATIVE PEOPLE,<br />
                 NEW TECHNOLOGY.

@@ -7,6 +7,10 @@
         width: 70%;
         margin: auto;
         margin-top: 2rem;
+        opacity: 0;
+        transform: translateX(-60px);
+        transition: all .3s ease-out;
+        
     }
 
     &__heading{

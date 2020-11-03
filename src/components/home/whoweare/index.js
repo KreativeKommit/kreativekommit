@@ -18,7 +18,7 @@ const WhoWeAre = props => {
                     WHO WE ARE
                 </h5>
                 <p className = {`${Styles.whoweare__details}`}>
-                    We are SPINX Digital in Los Angeles and as innovators
+                    We are kreative kommit in Los Angeles and as innovators
                     in creative website design & digital marketing, we build
                     AWESOME digital masterpieces. Take a sneak peek at our 
                     team, offices, culture, philosophy and beliefs.
