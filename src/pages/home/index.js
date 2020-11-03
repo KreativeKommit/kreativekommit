@@ -9,6 +9,7 @@ import Expertise from '../../components/home/expertise';
 import Technologies from '../../components/home/technologies';
 import Connect from '../../components/home/connect';
 import WhoWeAre from '../../components/home/whoweare';
+import Contact from '../../components/home/contact';
 
 
 const Home = props => {
@@ -22,6 +23,7 @@ const Home = props => {
             <Technologies />
             <Connect />
             <WhoWeAre />
+            <Contact />
         </div>
     )
 }
