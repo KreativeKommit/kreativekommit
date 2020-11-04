@@ -23,8 +23,21 @@
     }
     .left{
         float: left;
+       > div{
+            transform: translateX(-20px);
+            opacity: 0;
+            transition: all 1s ease-out;
+            
+        }
     }
     .right{
         float: right;
+
+       > div{
+            transform: translateX(20px);
+            transition: all 1s ease-out;
+            opacity: 0;
+            
+        }
     }
 }

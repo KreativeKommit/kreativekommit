@@ -26,6 +26,11 @@
             height: 100%;
             background-color: rgba(0,0,0,.6);
             position: absolute;
+            &__content{
+            transform: translateX(-30px);
+            opacity: 0;
+            transition: all 1s ease-out;
+            }
 
             h4{
                 width: 26rem;
@@ -132,6 +137,9 @@
             right: 0;
             position: absolute;
             padding-left: 7rem;
+            transform: translateX(20px);
+            transition: all 1s ease-out;
+            opacity: 0;
 
             &__heading{
                 width: 39rem;

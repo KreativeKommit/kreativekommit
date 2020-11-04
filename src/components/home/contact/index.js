@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import Styles from './contact.module.scss';
 import {reduxForm, Field} from 'redux-form';
 
@@ -7,7 +7,6 @@ import {reduxForm, Field} from 'redux-form';
   
 
 const renderField = ({ input, label, type,className, meta: { touched, error } }) =>{
-    console.log(input)
    return (
         <div className = {className} >
             <label>{label}</label>
@@ -19,6 +18,35 @@ const renderField = ({ input, label, type,className, meta: { touched, error } })
         );
 } 
 const Contact = props => {
+    const formRef = useRef(null);
+    const infoRef = useRef(null);
+
+    useEffect(()=>{
+        const handleScroll = e => {
+            if(infoRef.current && formRef.current){
+                const formRect = formRef.current.getBoundingClientRect();
+                const infoRect = infoRef.current.getBoundingClientRect();
+    
+                if (
+                    formRect.top >= 0 &&
+                    formRect.bottom - formRect.height/1.2 <= (window.innerHeight || document.documentElement.clientHeight)
+                ){
+                    formRef.current.style.transform = 'translateX(0)';
+                    formRef.current.style.opacity = '1';
+                }
+                if (
+                    infoRect.top >= 0 &&
+                    infoRect.bottom - infoRect.height/1.2 <= (window.innerHeight || document.documentElement.clientHeight)
+                ){
+                    infoRef.current.style.transform = 'translateX(0)';
+                    infoRef.current.style.opacity = '1';
+    
+                }
+            }
+            
+        }
+        document.addEventListener('scroll',handleScroll)
+    },[formRef,infoRef])
     const categories = [
                             'Discovery/Strategy',
                             'User Exerience (UX)',
@@ -52,12 +80,13 @@ const Contact = props => {
     return (
         <section className = {`${Styles.contact}`}>
             <div className = {`${Styles.contact__overlay}`}></div>
-            <div className = {`${Styles.contact__content}`}>
+            <div className = {`${Styles.contact__content}`} >
                 <form 
                     className = {`${Styles.contact__content__form}`} 
                     onSubmit = {props.handleSubmit(handleSubmit)}
+                    
                 >
-                    <div className = {`${Styles.contact__content__form__content}`}>
+                    <div className = {`${Styles.contact__content__form__content}`} ref = {formRef}>
                         <h4>CONTACT US</h4>
                         <Field 
                             name = 'firstName' 
@@ -126,7 +155,7 @@ const Contact = props => {
 
                     </div>
                 </form>
-                <div className = {`${Styles.contact__content__info}`} >
+                <div className = {`${Styles.contact__content__info}`} ref = {infoRef} >
                     <h4 className = {`${Styles.contact__content__info__heading}`}>ENGAGE & EXPERIENCE</h4>
                     <a href = '/' className = {`${Styles.contact__content__info__phone}`}>213.894.9933</a>
                     <a href = '/' className = {`${Styles.contact__content__info__place}`}>

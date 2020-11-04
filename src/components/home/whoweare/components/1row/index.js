@@ -6,13 +6,13 @@ const OneRow = props => {
         return props.items.map(item => {
             if (item.type === 'image'){
                 return (
-                    <div className = {Styles.row__image}>
+                    <div className = {Styles.row__image} >
                         <img src = {item.src} alt = {item.alt} />
                     </div>
                 )
             }
             return (
-                <div className = {`${Styles.row__text}`} style = {item.color?{backgroundColor:item.color}:{}}>
+                <div className = {`${Styles.row__text}`} style = {item.color?{backgroundColor:item.color}:{}} >
                     <p className = {`${Styles.row__text__quote}`}>
                         &ldquo;{item.quote}&rdquo;
                     </p>
@@ -24,7 +24,7 @@ const OneRow = props => {
         })
     }
     return (
-        <div className = {` ${props.class} ${Styles.row}`}>
+        <div className = {` ${props.class} ${Styles.row}`} ref = {props.ref}>
             {renderItems()}
         </div>
     )

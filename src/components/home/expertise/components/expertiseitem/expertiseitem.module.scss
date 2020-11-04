@@ -2,6 +2,9 @@
     background-color: #fff;
     color: #2F2F35;
     position: relative;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s ease-out;
 
     &:hover{
         .item {

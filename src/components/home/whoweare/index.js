@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import OneRow from './components/1row';
 import TwoRows from './components/2trow';
 import Slider from './components/slider';
@@ -11,6 +11,27 @@ import half4 from '../../../images/main page/half4.jpg';
 import half5 from '../../../images/main page/half5.jpg';
 
 const WhoWeAre = props => {
+    
+
+    useEffect(()=>{
+        const divs = document.querySelectorAll(`.${Styles.whoweare} > div > div`);
+
+        const handleScroll = e => {
+            for(let div of divs){
+                const itemRect = div.getBoundingClientRect();
+                if (
+                    itemRect.top >= 0 &&
+                    itemRect.left >= 0 &&
+                    itemRect.right <= (window.innerWidth || document.documentElement.clientWidth) &&
+                    itemRect.bottom - itemRect.height/1.2 <= (window.innerHeight || document.documentElement.clientHeight)
+                ){
+                    div.style.transform = 'translateX(0)';
+                    div.style.opacity = '1'
+                } 
+            }
+        }
+        document.addEventListener('scroll',handleScroll);
+    },[]);
     return (
         <section className = {`${Styles.whoweare} container`}>
             <header className = {`${Styles.whoweare__header}`}>

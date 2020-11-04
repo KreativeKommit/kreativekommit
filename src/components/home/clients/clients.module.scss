@@ -26,9 +26,8 @@
         display: flex;
         flex-wrap: wrap;
 
-
         &__item{
-            width: 24%;
+            width: 48%;
             font-size: 2rem;
             margin: 3rem auto;
             text-align: center;
@@ -38,5 +37,31 @@
                 font-size: 4rem;
             }
         }
+
+        &__right{
+            width: 50%;
+            display: flex;
+            flex-wrap: wrap;
+            li{
+                opacity: 0;
+                transform: translateX(20px);
+                transition: all 1s ease-out;
+            }
+        }
+
+        &__left{
+            width: 50%;
+            display: flex;
+            flex-wrap: wrap;
+            li{
+                opacity: 0;
+                transform: translateX(-20px);
+                transition: all 1s ease-out;
+                
+            }
+        }
+            
+
     }
+    
 }

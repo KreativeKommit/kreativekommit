@@ -4,6 +4,9 @@
     height: 20rem;
     overflow: hidden;
     cursor: pointer;
+    transform: translateY(10px);
+    opacity: 0;
+    transition: all 1s ease-out;
 
     &:hover{
         .item__overlay{

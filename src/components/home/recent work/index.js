@@ -10,6 +10,7 @@ import workitem5 from '../../../images/main page/workitem5.jpg'
 import workitem6 from '../../../images/main page/workitem6.jpg'
 
 const RecentWork = props=> {
+    
     return (
         <div className = {`${Styles.recentwork} container`}>
             <h3 className = {`${Styles.recentwork__heading}`}>Recent Work</h3>
