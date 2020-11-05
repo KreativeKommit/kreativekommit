@@ -18,10 +18,9 @@ const WhoWeAre = props => {
                     WHO WE ARE
                 </h5>
                 <p className = {`${Styles.whoweare__details}`}>
-                    We are kreative kommit in Los Angeles and as innovators
-                    in creative website design & digital marketing, we build
-                    AWESOME digital masterpieces. Take a sneak peek at our 
-                    team, offices, culture, philosophy and beliefs.
+                    We are kreative kommit in Greater Manchester, and as innovators
+                    in creative website design & digital marketing, we build 
+                    digital masterpieces. 
                 </p>
             </header>
             

@@ -24,33 +24,33 @@ const RecentWork = props=> {
             <div className = {`${Styles.workitems}`}>
                 <WorkItem 
                     image = {workitem} 
-                    title = 'BEGA Website Redesign'
-                    heading = 'lighting up an internet presence for bega '
+                    title = 'Website Redesign'
+                    heading = 'lighting up an internet presence'
                 />
                 <WorkItem 
                     image = {workitem2} 
-                    title = 'BEGA Website Redesign'
-                    heading = 'lighting up an internet presence for bega '
+                    title = 'Website Redesign'
+                    heading = 'lighting up an internet presence for'
                 />
                  <WorkItem 
                     image = {workitem3} 
-                    title = 'BEGA Website Redesign'
-                    heading = 'lighting up an internet presence for bega '
+                    title = 'Website Redesign'
+                    heading = 'lighting up an internet presence for'
                 />
                  <WorkItem 
                     image = {workitem4} 
-                    title = 'BEGA Website Redesign'
-                    heading = 'lighting up an internet presence for bega '
+                    title = 'Website Redesign'
+                    heading = 'lighting up an internet presence for '
                 />
                  <WorkItem 
                     image = {workitem5} 
-                    title = 'BEGA Website Redesign'
-                    heading = 'lighting up an internet presence for bega '
+                    title = 'Website Redesign'
+                    heading = 'lighting up an internet presence for'
                 />
                  <WorkItem 
                     image = {workitem6} 
-                    title = 'BEGA Website Redesign'
-                    heading = 'lighting up an internet presence for bega '
+                    title = 'Website Redesign'
+                    heading = 'lighting up an internet presence for'
                 />
             </div>
             <button className = {`${Styles.recentwork__button}`}>view more works</button>
