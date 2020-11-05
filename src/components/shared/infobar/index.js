@@ -7,7 +7,7 @@ const InfoBar = props => {
         <div className = {`${Styles.infobar}`}>
             <div className = {`${Styles.infobar__container} container`}>
                 <span className = {`${Styles.infobar__phone}`}>
-                (213) 894-9933
+                07447616226
                 </span>
                 <span className = {`${Styles.infobar__line}`}></span>
                 <span className = {`${Styles.infobar__email}`}>

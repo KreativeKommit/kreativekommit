@@ -58,9 +58,9 @@ const Header = props => {
             
             <NavBar class = {Styles.nav}/>
             <p className = {Styles.header__info}>
-                BIG IDEAS,<br />
-                CREATIVE PEOPLE,<br />
-                NEW TECHNOLOGY.
+                BIG ON IDEAS,<br />
+                BIG ON DESIGN,<br />
+                BIG ON TECHNOLOGY.
             </p> 
             
             <div className = {`${Styles.header__overlay}`}>

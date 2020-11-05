@@ -80,7 +80,7 @@ const Expertise = props => {
                         image = {expertise5}
 
                         icon = 'fa-mobile'
-                        heading = 'INTERPRISE CMS SOLUTIONS'
+                        heading = 'ENTERPRISE CMS SOLUTIONS'
                         details = 
                             "A thorough discovery is at the core of every
                             successful digital solution we craft. 

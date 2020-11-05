@@ -50,14 +50,14 @@ const Contact = props => {
     const categories = [
                             'Discovery/Strategy',
                             'User Exerience (UX)',
-                            'Website Designn',
+                            'Website Design',
                             'Website Development',
                             'Application Development',
                             'Mobile Apps',
                             'E-Commerce',
                             'Marketing/Advertising',
                             'Social Media',
-                            'Others'
+                            'Other'
                         ]
     
     const renderServicesOptions = ({ input,className, meta: { touched, error } }) => (
@@ -159,8 +159,8 @@ const Contact = props => {
                     <h4 className = {`${Styles.contact__content__info__heading}`}>ENGAGE & EXPERIENCE</h4>
                     <a href = '/' className = {`${Styles.contact__content__info__phone}`}>213.894.9933</a>
                     <a href = '/' className = {`${Styles.contact__content__info__place}`}>
-                        911 W. Washington Blvd.<br />
-                        Los Angeles, CA 90015 U.S.A.
+                        4 Copeland Drive<br />
+                       Standish, Greater Manchester, WN6 0XR
                     </a>
                     <p className = {`${Styles.contact__content__info__site}`}>
                         <a href = '/'>hello@kreativekommit.com</a>

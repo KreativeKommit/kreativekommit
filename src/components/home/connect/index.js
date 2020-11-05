@@ -28,7 +28,7 @@ const Connect = props =>{
                     </div>
                     <div className = {`${Styles.connect__content__content}`}>
                         <h4 className = {`${Styles.connect__content__content__heading}`}>CONNECT</h4>
-                        <p className = {`${Styles.connect__content__content__span}`}>YOU & KREATIVEKOMMIT & THE AUDIENCE</p>
+                        <p className = {`${Styles.connect__content__content__span}`}>YOU, KREATIVE KOMMIT & THE AUDIENCE</p>
                         <p className = {`${Styles.connect__content__content__text}`}>
                             We believe the most effective connections are emotional.
                             People know it when they feel it.
@@ -36,7 +36,7 @@ const Connect = props =>{
                         <br />
                         <br />
                         <p className = {`${Styles.connect__content__content__text}`}>
-                            Our interactive web design agency in Los Angeles helps you 
+                            Our web design and development agency in Greater Manchester helps you 
                             connect with your audience in exciting and engaging ways.
                             We focus on your success by defining your needs
                             and achieving your goals
