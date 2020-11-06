@@ -15,10 +15,10 @@ const RecentWork = props=> {
             <h3 className = {`${Styles.recentwork__heading}`}>Recent Work</h3>
             <hr />
             <p className = {`${Styles.recentwork__details}`}>
-                We have a deep understanding of user habits and behaviors.
+                We have a good understanding of user habits and behaviors.
                 We are committed to using fact-based knowledge and our 
                 unique brand of innovation to help you dominate the 
-                competition. Every project is customized for 
+                competition. Every project is customised for 
                 optimum visibility and audience response.
             </p>
             <div className = {`${Styles.workitems}`}>
