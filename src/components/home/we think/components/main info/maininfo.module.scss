@@ -5,6 +5,7 @@
 
     &__container{
         width: 70%;
+        overflow: hidden;
         margin: auto;
         margin-top: 2rem;
         opacity: 0;
@@ -28,4 +29,30 @@
     &__description{
         line-height: 200%;
     }
+}
+@media only screen and (max-width:480px){
+ .info{
+     height: auto;
+
+     &__container{
+         width: 95vw;
+         margin: auto;
+     }
+     &__heading{
+         font-size: 3rem;
+         margin-top: 1rem;
+         span{
+             font-size: 8rem;
+             display: inline-block;
+             margin-top: -2rem;
+         }
+     }
+     &__title{
+         margin: 1rem 0;
+     }
+     &__description{
+         margin-bottom: 2rem;
+     }
+
+ }   
 }

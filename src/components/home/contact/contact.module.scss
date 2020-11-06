@@ -24,6 +24,7 @@
         &__form{
             width: 40%;
             height: 100%;
+            max-height: 750px;
             background-color: rgba(0,0,0,.6);
             position: absolute;
             &__content{
@@ -193,5 +194,73 @@
             }
             
         }
+    }
+}
+@media only screen and (max-width:480px){
+    .contact{
+
+        height: 270vh;
+
+        &__content{
+            &__form{
+
+                width: 100%;
+                padding: 1rem;
+                bottom: 0;
+    
+                &__input{
+                    width: 100%;
+
+                    &Half{
+                        margin: 0;
+
+                        input{
+                            width: 100%;
+                        }
+                    }
+                }
+
+                &__select{
+                    width: 100%;
+                }
+                &__box{
+                    width: 100%;
+                }
+                &__halfs{
+                    width: 100%;
+                }
+            }
+    
+            &__info{
+                width: 95%;
+                margin: auto;
+                padding: 0;
+
+                &__heading{
+                    font-size: 1.5rem;
+                    margin-top: 3rem;
+                }
+
+                &__phone{
+                    margin-bottom: 1rem;
+                }
+                &__place{
+                    margin-bottom: 1rem;
+                }
+
+                &__site{
+                    padding-bottom: 1rem;
+                }
+                &__question{
+                    width: 95%;
+                }
+                &__answer{
+                    width: 100%;
+                }
+            }
+
+        }
+
+        
     }
 }

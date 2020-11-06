@@ -21,8 +21,6 @@ const WhoWeAre = props => {
                 const itemRect = div.getBoundingClientRect();
                 if (
                     itemRect.top >= 0 &&
-                    itemRect.left >= 0 &&
-                    itemRect.right <= (window.innerWidth || document.documentElement.clientWidth) &&
                     itemRect.bottom - itemRect.height/1.2 <= (window.innerHeight || document.documentElement.clientHeight)
                 ){
                     div.style.transform = 'translateX(0)';

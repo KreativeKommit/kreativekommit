@@ -22,3 +22,15 @@
         row-gap: 2rem;
     }
 }
+@media only screen and (max-width:480px){
+    .expertise{
+
+        &__details{
+            width: 90%;
+            text-align: left;
+        }
+        &__items{
+            grid-template-columns: 1fr;
+        }
+    }
+}

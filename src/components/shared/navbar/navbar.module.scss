@@ -13,12 +13,22 @@
         justify-content: space-between;
         align-items: center;
     }
+
+    &__mobile{
+        display: none;
+    }
+    &__mobilebutton{
+        color: #fff;
+        font-size: 2.2rem;
+        display: none;
+    }
     &__logo{
         cursor: pointer;
         span{
             color:var(--main-color);
         }
     }
+   
     &__links{
         display: flex;
         li{
@@ -45,4 +55,87 @@
             }
         }
     }
+    &__mobile{
+        position: fixed;
+        bottom: 0;
+        top: 0;
+        left: 101%;
+        right: 0;
+        background: #212125;
+        flex-direction: column;
+        padding-left: 2rem;
+        z-index: 1000;
+        width: 100vw;
+        height: 105vh;
+        transform: translateY(-43px);
+        display: flex;
+        transition: left .3s linear;
+
+        &__header{
+            display: flex;
+            align-items: center;
+            color: #fff;
+            padding: 2rem;
+            position: relative;
+
+            h5{
+                font-size: 2rem;
+            }
+            a{
+                color: var(--main-color);
+                position: absolute;
+                right: 2rem;
+                top: 50%;
+                transform: translateY(-50%);
+                font-size: 1.5rem;
+            }
+        }
+        &__links{
+            li{
+                
+                margin-bottom: 1rem;
+                &:last-of-type{
+                    a{
+                        background-color: var(--main-color);
+                        padding: .2rem;
+                    }
+                }
+            }
+            a{
+                color: #fff;
+                text-decoration: none;
+                font-size: 1.5rem;
+                font-weight: 600;
+                position: relative;
+
+               
+
+            }
+            &__arrow{
+                position: absolute;
+                color: var(--main-color);
+                font-size: 1.5rem;
+                right: 2rem;
+            }
+            
+        }
+    }
+}
+
+@media only screen and (max-width:480px){
+    .navbar{
+
+        &__logo{
+            width: 180px;
+        }
+        &__mobilebutton{
+            display: block;
+        }
+
+        &__links{
+            display: none;
+        }
+
+    }
+
 }

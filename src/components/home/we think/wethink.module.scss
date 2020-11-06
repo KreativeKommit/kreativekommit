@@ -1,9 +1,14 @@
 .wethink{
-    height: 90vh;
+    min-height: 90vh;
     background-image: url('../../../images/main page/wethink.jpg');
     background-size: cover;
     background-position: bottom;
     border-top: 4px solid var(--main-color);
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+@media only screen and (max-width:480px){
+   .wethink{
+        grid-template-columns: 1fr;
+   }
 }

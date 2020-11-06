@@ -41,3 +41,40 @@
         }
     }
 }
+@media only screen and (max-width:480px){
+ .whoweare{
+
+    &__heading{
+        margin: 1rem auto;
+    }
+    &__details{
+        width: 95%;
+        text-align: left;
+
+    }
+ }   
+}
+@media only screen and (max-width:480px){
+    .whoweare{
+        .left{
+            width: auto;
+            margin: 0;
+
+            >div{
+                margin-bottom: 1rem;
+            }
+        }
+        .right{
+            width: auto;
+            margin: 0;
+
+            >div{
+                margin-bottom: 1rem;
+            }
+        }
+        img{
+            object-fit: cover;
+            height: 15rem;
+        }
+    }
+}

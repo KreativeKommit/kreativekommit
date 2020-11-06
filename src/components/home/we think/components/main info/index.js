@@ -11,7 +11,7 @@ const MainInfo = props => {
 
             if(
                 containerRect.top>= 0 &&
-                containerRect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+                containerRect.bottom/2 <= (window.innerHeight || document.documentElement.clientHeight)
             ){
                 container.style.transform = 'translateX(0)';
                 container.style.opacity = '1';

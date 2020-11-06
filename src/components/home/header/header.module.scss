@@ -32,3 +32,13 @@
         transition: transform .4s ease-out;
     }
 }
+@media only screen and (max-width:480px){
+    .header{
+
+        height: 70vh;
+
+        &__info{
+            font-size: 2rem;
+        }
+    }
+}
