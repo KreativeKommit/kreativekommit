@@ -9,10 +9,10 @@ import {reduxForm, Field} from 'redux-form';
 const renderField = ({ input, label, type,className, meta: { touched, error } }) =>{
    return (
         <div className = {className} >
-            <label>{label}</label>
+            <label htmlFor = {label}>{label}</label>
             <div>
-            <input {...input} type={type} placeholder  />
-            { <span>some error</span>}
+            <input {...input} type={type} placeholder id = {label} />
+            {touched && error && <span>{error}</span>}
             </div>
         </div>
         );
@@ -62,7 +62,10 @@ const Contact = props => {
     
     const renderServicesOptions = ({ input,className, meta: { touched, error } }) => (
         <div className = {className}>
-          <select {...input} className = {Styles.contact__content__form__select__box}>
+            <label htmlFor = 'service'>
+                Service
+            </label>
+          <select id = 'service' {...input} className = {Styles.contact__content__form__select__box}>
             <option value="">please select </option>
             {categories.map(val => (
               <option value={val} key={val}>

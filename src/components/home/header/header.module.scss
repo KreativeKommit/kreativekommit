@@ -9,7 +9,7 @@
         position: fixed;
         width: 100%;
         background-color: transparent;
-        z-index: 1;
+        z-index: 1000;
         transform: translateY(10px);
     }
     &__overlay{
@@ -30,6 +30,15 @@
         width: 90%;
         transform:translateX(80%);
         transition: transform .4s ease-out;
+    }
+}
+
+@media only screen and (max-width:769px){
+    .header{
+        height: 90vh;
+        &__info{
+            font-size: 3rem;
+        }
     }
 }
 @media only screen and (max-width:480px){

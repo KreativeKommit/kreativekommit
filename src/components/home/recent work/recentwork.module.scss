@@ -36,6 +36,19 @@
         }
     }
 }
+@media only screen and (max-width:769px){
+    .recentwork{
+
+        &__details{
+            font-weight: 300;
+            text-align: left;
+            width: 95%;
+        }
+        .workitems{
+            grid-template-columns: 1fr;
+        }
+    }
+}
 @media only screen and (max-width:480px){
     .recentwork{
 

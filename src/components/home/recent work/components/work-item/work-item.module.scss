@@ -94,6 +94,23 @@
 
     }
 }
+@media only screen and (max-width:769px){
+    .item{
+
+        &__overlay{
+            display: block;
+        }
+        &__details{
+            opacity: 1;
+
+            &__wrapper{
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    }    
+
+}
 @media only screen and (max-width:480px){
     .item{
         height: 15rem;

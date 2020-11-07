@@ -66,6 +66,22 @@
     
 }
 
+@media only screen and (max-width:769px){
+
+    .clients{
+
+
+        &__header{
+            &__details{
+                text-align: center;
+                width: 95%;
+            }
+            
+        }
+     
+    }
+}
+
 @media only screen and (max-width:480px){
 
     .clients{

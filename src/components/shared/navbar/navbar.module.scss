@@ -7,6 +7,7 @@
     color: #fff;
     display: flex;
     align-items: center;
+    z-index: 1000;
 
     &__container{
         display: flex;
@@ -17,6 +18,7 @@
     &__mobile{
         display: none;
     }
+   
     &__mobilebutton{
         color: #fff;
         font-size: 2.2rem;
@@ -114,11 +116,28 @@
             &__arrow{
                 position: absolute;
                 color: var(--main-color);
-                font-size: 1.5rem;
+                font-size: 2rem !important;
                 right: 2rem;
             }
             
         }
+    }
+}
+
+@media only screen and (max-width:769px){
+    .navbar{
+
+        &__logo{
+            width: 180px;
+        }
+        &__mobilebutton{
+            display: block;
+        }
+
+        &__links{
+            display: none;
+        }
+
     }
 }
 

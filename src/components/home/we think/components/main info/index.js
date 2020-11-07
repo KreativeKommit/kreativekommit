@@ -10,7 +10,7 @@ const MainInfo = props => {
             const containerRect = container.getBoundingClientRect();
 
             if(
-                containerRect.top>= 0 &&
+                containerRect.top>= -50 &&
                 containerRect.bottom/2 <= (window.innerHeight || document.documentElement.clientHeight)
             ){
                 container.style.transform = 'translateX(0)';

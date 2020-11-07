@@ -134,7 +134,6 @@
         }
         &__info{
             width: 60%;
-            height: 100%;
             right: 0;
             position: absolute;
             padding-left: 7rem;
@@ -194,6 +193,74 @@
             }
             
         }
+    }
+}
+@media only screen and (max-width:769px){
+    .contact{
+
+        height: 270vh;
+
+        &__content{
+            &__form{
+
+                width: 100%;
+                padding: 1rem;
+                bottom: 0;
+    
+                &__input{
+                    width: 100%;
+
+                    &Half{
+                        margin: 0;
+
+                        input{
+                            width: 100%;
+                        }
+                    }
+                }
+
+                &__select{
+                    width: 100%;
+                }
+                &__box{
+                    width: 100%;
+                }
+                &__halfs{
+                    width: 100%;
+                }
+            }
+    
+            &__info{
+                width: 95%;
+                margin: auto;
+                padding: 0;
+
+                &__heading{
+                    font-size: 1.5rem;
+                    margin-top: 3rem;
+                }
+
+                &__phone{
+                    margin-bottom: 1rem;
+                }
+                &__place{
+                    margin-bottom: 1rem;
+                }
+
+                &__site{
+                    padding-bottom: 1rem;
+                }
+                &__question{
+                    width: 95%;
+                }
+                &__answer{
+                    width: 100%;
+                }
+            }
+
+        }
+
+        
     }
 }
 @media only screen and (max-width:480px){

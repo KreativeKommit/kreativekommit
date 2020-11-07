@@ -96,3 +96,52 @@
         }
     }
 }
+
+@media only screen and (max-width:769px){
+    .connect .connect__container{
+        width: 100%;
+    }
+    .connect{
+        background-color: #EFEBEA;
+        background-image: none;
+        height: 42rem;
+
+        &__content{
+            width: 87%;
+            margin: auto;
+
+            &__line{
+                left: 12px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:480px){
+    .connect .connect__container{
+        width: 100%;
+    }
+    .connect{
+        background-color: #EFEBEA;
+        background-image: none;
+        height: 107vh;
+
+        &__content{
+            width: 87%;
+            margin: auto;
+
+            &__line{
+                left: 12px;
+            }
+            &__content{
+                &__heading{
+                    font-size: 2rem;
+                }
+                &__text{
+                    margin-top: -2rem;
+                }
+            }
+            
+        }
+    }
+}

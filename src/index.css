@@ -21,6 +21,33 @@ body{
 img{
     object-fit: cover;
 }
+
+.rec-carousel{
+    position: relative;
+}
+.rec-dot{
+    display: none;
+}
+.rec-arrow{
+    position: absolute;
+    z-index: 1;
+}
+.rec-arrow-left{
+    transform: translateX(50%);
+}
+.rec-arrow-right{
+    transform: translateX(-50%);
+    right: 0;
+}
+
+@media only screen and (max-width:769px){
+    .container{
+        width: 95%;
+        margin: auto;
+        overflow: hidden;
+    }
+}
+
 @media only screen and (max-width:480px){
     .container{
         width: 95%;

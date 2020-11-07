@@ -14,8 +14,8 @@
     &__list{
         display: flex;
         align-items: center;
+        justify-content: center;
         margin: 2rem auto;
-        flex-wrap: wrap;
         &__item{
             width: 32%;
             margin: 0 2rem;
@@ -28,12 +28,27 @@
         }
     }
 }
+@media only screen and (max-width:769px){
+    .technologies{
+        &__list{
+
+            flex-wrap: wrap;
+
+            &__item{
+                margin: 1rem 1rem;
+                width: 15%;
+            }
+        }
+    }
+}
 @media only screen and (max-width:480px){
     .technologies{
         &__list{
 
+            flex-wrap: wrap;
+
             &__item{
-                margin: 0 1rem;
+                margin: 1rem 1rem;
             }
         }
     }
