@@ -15,9 +15,9 @@ const Expertise = props => {
                 <header className = {`${Styles.expertise__header}`}>
                     <h4 className = {`${Styles.expertise__heading} container`}>EXPERTISE</h4>
                     <p className = {`${Styles.expertise__details}`}>
-                        We are innovators in creative web design in Los Angeles.
-                        We don’t play any guessing games, but seek the facts 
-                        from a range of analytics to help you get the edge.
+                        We are innovators in creative web design in Greater Manchester.
+                        We don’t play guessing games, but seek facts 
+                        from a range of analytics to help you get an edge.
                     </p>
                 </header>
                 <section className = {`${Styles.expertise__items} container`}>
@@ -66,7 +66,7 @@ const Expertise = props => {
                         image = {expertise4}
 
                         icon = 'fa-bicycle'
-                        heading = 'MOBILE & TABLE SOLUTIONS'
+                        heading = 'MOBILE & TABLET SOLUTIONS'
                         details = 
                             "A thorough discovery is at the core of every
                             successful digital solution we craft. 

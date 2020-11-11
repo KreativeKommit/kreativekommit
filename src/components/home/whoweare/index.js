@@ -38,8 +38,7 @@ const WhoWeAre = props => {
                 </h5>
                 <p className = {`${Styles.whoweare__details}`}>
                     We are kreative kommit in Greater Manchester, and as innovators
-                    in creative website design & digital marketing, we build 
-                    digital masterpieces. 
+                    in creative website design, development & digital marketing, we build masterpieces. 
                 </p>
             </header>
             

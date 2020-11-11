@@ -160,7 +160,7 @@ const Contact = props => {
                 </form>
                 <div className = {`${Styles.contact__content__info}`} ref = {infoRef} >
                     <h4 className = {`${Styles.contact__content__info__heading}`}>ENGAGE & EXPERIENCE</h4>
-                    <a href = '/' className = {`${Styles.contact__content__info__phone}`}>213.894.9933</a>
+                    <a href = '/' className = {`${Styles.contact__content__info__phone}`}>07447 616226</a>
                     <a href = '/' className = {`${Styles.contact__content__info__place}`}>
                         4 Copeland Drive<br />
                        Standish, Greater Manchester, WN6 0XR
