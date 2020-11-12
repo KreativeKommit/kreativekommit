@@ -131,6 +131,23 @@
                     }
                 }
             }
+            &__button{
+
+                background-color: transparent;
+                color: #fff;
+                text-transform: capitalize;
+                border: 2px solid var(--main-color);
+                margin: 1rem auto;
+                padding: .5rem;
+                font-size: 1.5rem;
+                outline: none;
+                cursor: pointer;
+
+                &:hover{
+                    background-color: var(--main-color);
+                    transition: background-color .3s linear;
+                }
+            }
         }
         &__info{
             width: 60%;
