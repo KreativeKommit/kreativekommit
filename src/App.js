@@ -1,9 +1,14 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import InfoBar from './components/shared/infobar';
 import {BrowserRouter as Router, Route} from 'react-router-dom'
-import Home from './pages/home'
+import Home from './pages/home';
+import { loadReCaptcha } from 'react-recaptcha-google';
 
 const App = props => {
+
+    useEffect(()=>{
+        loadReCaptcha();
+    },[])
     return (
         <div>
             <Router>

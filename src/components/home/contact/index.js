@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import Styles from './contact.module.scss';
 import {reduxForm, Field} from 'redux-form';
+import ExampleComponent from '../../shared/recaptcha';
 
 
 
@@ -154,8 +155,8 @@ const Contact = props => {
                                 className = {`${Styles.contact__content__form__box__field}`}
                             />
                         </div>
-                        
-
+                        <button>Submit</button>
+                        <ExampleComponent/>
                     </div>
                 </form>
                 <div className = {`${Styles.contact__content__info}`} ref = {infoRef} >
