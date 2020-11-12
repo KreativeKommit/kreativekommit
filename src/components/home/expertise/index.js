@@ -28,11 +28,9 @@ const Expertise = props => {
                         details = 
                             "A thorough discovery is at the core of every
                             successful digital solution we craft. 
-                            Understanding who you are building for 
-                            and why you are building it is more important
-                            than the colors or technology you use.
-                            If you don't know these things first,
-                            the rest is pointless"
+                            Understanding who we are building for 
+                            and why we are building it is as important
+                            than the colors or technology used."
                     />
                     <Item
                         image = {expertise2}
@@ -40,13 +38,11 @@ const Expertise = props => {
                         icon = 'fa-list'
                         heading = 'STRATEGY & PLANNING'
                         details = 
-                            "A thorough discovery is at the core of every
-                            successful digital solution we craft. 
-                            Understanding who you are building for 
-                            and why you are building it is more important
-                            than the colors or technology you use.
-                            If you don't know these things first,
-                            the rest is pointless"
+                            "Strategy & planning is everything. The needs 
+                            of digital consumers are not the same today as 
+                            they were just 6 months ago. We have the experience and 
+                            knowledge needed to create a smart strategy for 
+                            your business to solve your digital problems."
                     />
                     <Item
                         image = {expertise3}
@@ -54,13 +50,10 @@ const Expertise = props => {
                         icon = 'fa-volume-up'
                         heading = 'WEBSITE SOLUTIONS'
                         details = 
-                            "A thorough discovery is at the core of every
-                            successful digital solution we craft. 
-                            Understanding who you are building for 
-                            and why you are building it is more important
-                            than the colors or technology you use.
-                            If you don't know these things first,
-                            the rest is pointless"
+                            "Web design and development is in our roots. Designing 
+                            and developing for numerous screen sizes and devices 
+                            takes precision, which is why our bespoke hand-crafted designs, 
+                            and developments are second to none."
                     />
                     <Item
                         image = {expertise4}
@@ -68,13 +61,10 @@ const Expertise = props => {
                         icon = 'fa-bicycle'
                         heading = 'MOBILE & TABLET SOLUTIONS'
                         details = 
-                            "A thorough discovery is at the core of every
-                            successful digital solution we craft. 
-                            Understanding who you are building for 
-                            and why you are building it is more important
-                            than the colors or technology you use.
-                            If you don't know these things first,
-                            the rest is pointless"
+                            "We can deliver an engaging experience on 
+                            mobile devices of all shapes and sizes. We know the best 
+                            practices to follow and where we can push the envelope to 
+                            deliver delight."
                     />
                     <Item
                         image = {expertise5}
@@ -82,13 +72,10 @@ const Expertise = props => {
                         icon = 'fa-mobile'
                         heading = 'ENTERPRISE CMS SOLUTIONS'
                         details = 
-                            "A thorough discovery is at the core of every
-                            successful digital solution we craft. 
-                            Understanding who you are building for 
-                            and why you are building it is more important
-                            than the colors or technology you use.
-                            If you don't know these things first,
-                            the rest is pointless"
+                            "If you are looking for the power and efficiencies found with 
+                            enterprise content management solutions, we can help. Our 
+                            enterprise solutions enable you to leverage enterprise content 
+                            management platforms to self manage your website."
                     />
                     <Item
                         image = {expertise6}
@@ -96,13 +83,10 @@ const Expertise = props => {
                         icon = 'fa-cog'
                         heading = 'DIGITAL MARKETING'
                         details = 
-                            "A thorough discovery is at the core of every
-                            successful digital solution we craft. 
-                            Understanding who you are building for 
-                            and why you are building it is more important
-                            than the colors or technology you use.
-                            If you don't know these things first,
-                            the rest is pointless"
+                            "You've spent a lot of time and money getting your business to 
+                            where it is today. Let us help you take your business to the next 
+                            level with our digital marketing solutions. We'll make sure your
+                            company gets the exposure it needs to thrive."
                     />
                     
                 </section>

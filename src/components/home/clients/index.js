@@ -29,10 +29,8 @@ const Clients = props => {
                     <h4 className = {`${Styles.clients__header__heading}`}>SELECT CLIENTS</h4>
                     
                     <p className = {`${Styles.clients__header__details}`}>
-                        We are proud to have some of the most well-known and
-                        respected corporate clients – but we love to help 
-                        start-ups and new brands too. We aren’t just talk.
-                        We are in the game, in a big way, and are ready 
+                        We are proud to have some amazing corporate clients – but we love to help 
+                        start-ups and new brands too. We are in the game, in a big way, and are ready 
                         to partner with you.
                     </p>
                 </header>

@@ -30,28 +30,28 @@ const RecentWork = props=> {
                 />
                 <WorkItem 
                     image = {workitem2} 
-                    title = 'Website Redesign'
-                    heading = 'lighting up an internet presence for'
+                    title = 'Website CEO'
+                    heading = 'Creating an internet presence'
                 />
                  <WorkItem 
                     image = {workitem3} 
-                    title = 'Website Redesign'
-                    heading = 'lighting up an internet presence for'
+                    title = 'Youtube Video Intro'
+                    heading = 'Creating a social media presence'
                 />
                  <WorkItem 
                     image = {workitem4} 
                     title = 'Website Redesign'
-                    heading = 'lighting up an internet presence for '
+                    heading = 'Redesign for RnA Electrical'
                 />
                  <WorkItem 
                     image = {workitem5} 
-                    title = 'Website Redesign'
-                    heading = 'lighting up an internet presence for'
+                    title = 'Website Design'
+                    heading = 'Website and social media presence'
                 />
                  <WorkItem 
                     image = {workitem6} 
-                    title = 'Website Redesign'
-                    heading = 'lighting up an internet presence for'
+                    title = 'Website Development'
+                    heading = 'Creating a web app for WeWurx'
                 />
             </div>
             <button className = {`${Styles.recentwork__button}`}>view more works</button>
