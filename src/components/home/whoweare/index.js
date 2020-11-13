@@ -3,12 +3,15 @@ import OneRow from './components/1row';
 import TwoRows from './components/2trow';
 import Slider from './components/slider';
 import Styles from './whoweare.module.scss';
+import full1 from '../../../images/main page/full1.jpg';
 import full from '../../../images/main page/full.jpg';
 import half1 from '../../../images/main page/half1.jpg';
 import half2 from '../../../images/main page/half2.jpg';
 import half3 from '../../../images/main page/half3.jpg';
 import half4 from '../../../images/main page/half4.jpg';
 import half5 from '../../../images/main page/half5.jpg';
+import half6 from '../../../images/main page/half6.jpg';
+import half7 from '../../../images/main page/half7.jpg';
 
 const WhoWeAre = props => {
     
@@ -89,9 +92,9 @@ const WhoWeAre = props => {
             />
             <TwoRows 
                 class = { `${Styles.right}`}
-                full = {full}
-                half1 = {half1}
-                half2 = {half2}
+                full = {full1}
+                half1 = {half6}
+                half2 = {half7}
             />
         </section>
     )
