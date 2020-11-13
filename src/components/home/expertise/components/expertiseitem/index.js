@@ -52,13 +52,11 @@ const Item  = props => {
                     <div className = {Styles.item__secondlayer__content}>
                         <h4 className = {`${Styles.item__secondlayer__content__heading}`}>{props.heading}</h4>
                         <ul className = {`${Styles.item__secondlayer__content__ul}`}>
-                            <li> <Link to = '#'>Visual Design</Link></li>
-                            <li><Link to  = '#'>Development</Link></li>
-                            <li><Link to = '#'>CMS Design & Implementation</Link></li>
-                            <li><Link to = "#">ECommerce</Link></li>
-                            <li><Link to = '#'>Compaign Microsites</Link></li>
-                            <li><Link to = '#'>Website Redesign Services</Link></li>
-                            <li><Link to = '#'>Website Maintanence Services</Link></li>
+                            {props.secondLayerList.map(item => {
+                               return <li> <Link to = '#'>{item}</Link></li>
+                            })}
+                            
+                            
 
                         </ul>
                         <button className = {`${Styles.item__secondlayer__content__button}`}>

@@ -9,6 +9,9 @@
     }
     &__half{
         overflow: hidden;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
 
         &__item{
             margin-right: 1rem;

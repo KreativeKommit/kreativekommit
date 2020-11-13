@@ -31,6 +31,15 @@ const Expertise = props => {
                             Understanding who we are building for 
                             and why we are building it is as important
                             than the colors or technology used."
+                        secondLayerList = {[
+                                'Visual Design',
+                                'Developmen',
+                                'CMS Design & Implementation',
+                                'ECommerce',
+                                'Compaign Microsites',
+                                'Website Redesign Services',
+                                'Website Maintanence Services'
+                            ]}
                     />
                     <Item
                         image = {expertise2}
@@ -43,6 +52,15 @@ const Expertise = props => {
                             they were just 6 months ago. We have the experience and 
                             knowledge needed to create a smart strategy for 
                             your business to solve your digital problems."
+                        secondLayerList = {[
+                            'Visual Design',
+                            'Developmen',
+                            'CMS Design & Implementation',
+                            'ECommerce',
+                            'Compaign Microsites',
+                            'Website Redesign Services',
+                            'Website Maintanence Services'
+                        ]}
                     />
                     <Item
                         image = {expertise3}
@@ -54,6 +72,15 @@ const Expertise = props => {
                             and developing for numerous screen sizes and devices 
                             takes precision, which is why our bespoke hand-crafted designs, 
                             and developments are second to none."
+                        secondLayerList = {[
+                            'Visual Design',
+                            'Developmen',
+                            'CMS Design & Implementation',
+                            'ECommerce',
+                            'Compaign Microsites',
+                            'Website Redesign Services',
+                            'Website Maintanence Services'
+                        ]}
                     />
                     <Item
                         image = {expertise4}
@@ -65,6 +92,15 @@ const Expertise = props => {
                             mobile devices of all shapes and sizes. We know the best 
                             practices to follow and where we can push the envelope to 
                             deliver delight."
+                        secondLayerList = {[
+                            'Visual Design',
+                            'Developmen',
+                            'CMS Design & Implementation',
+                            'ECommerce',
+                            'Compaign Microsites',
+                            'Website Redesign Services',
+                            'Website Maintanence Services'
+                        ]}
                     />
                     <Item
                         image = {expertise5}
@@ -76,6 +112,15 @@ const Expertise = props => {
                             enterprise content management solutions, we can help. Our 
                             enterprise solutions enable you to leverage enterprise content 
                             management platforms to self manage your website."
+                        secondLayerList = {[
+                            'Visual Design',
+                            'Developmen',
+                            'CMS Design & Implementation',
+                            'ECommerce',
+                            'Compaign Microsites',
+                            'Website Redesign Services',
+                            'Website Maintanence Services'
+                        ]}
                     />
                     <Item
                         image = {expertise6}
@@ -87,6 +132,15 @@ const Expertise = props => {
                             where it is today. Let us help you take your business to the next 
                             level with our digital marketing solutions. We'll make sure your
                             company gets the exposure it needs to thrive."
+                        secondLayerList = {[
+                            'Visual Design',
+                            'Developmen',
+                            'CMS Design & Implementation',
+                            'ECommerce',
+                            'Compaign Microsites',
+                            'Website Redesign Services',
+                            'Website Maintanence Services'
+                        ]}
                     />
                     
                 </section>

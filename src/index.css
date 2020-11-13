@@ -22,6 +22,10 @@ img{
     object-fit: cover;
 }
 
+
+div.rec-slider-container{
+    margin: 0;
+}
 .rec-carousel{
     position: relative;
 }

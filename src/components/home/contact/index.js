@@ -154,11 +154,13 @@ const Contact = props => {
                                 rows = '6'
                                 className = {`${Styles.contact__content__form__box__field}`}
                             />
+                            <ExampleComponent/>
+                            <button className = {Styles.contact__content__form__button}>Submit</button>
                             
                         </div>
+                             
                         <div>
-                             <ExampleComponent/>
-                            <button className = {Styles.contact__content__form__button}>Submit</button>
+                           
                         </div>
                             
                     </div>

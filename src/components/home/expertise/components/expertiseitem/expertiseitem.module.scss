@@ -97,12 +97,16 @@
 
                 li{
                     margin-top:.7rem;
+                    &:hover{
+                        color: var(--main-color);
+                        transition: color .3s ease-in-out;
+                    }
                     a{
-                        transition: color .4s ease-in-out;
                         color: #fff;
                         text-decoration: none;
                         &:hover{
                             color: var(--main-color);
+                            transition: color .3s ease-in-out;
                         }
                     }
                    
